@@ -1,7 +1,7 @@
 # WIFI Software Developer 2023
 hello zusammen...
 
-**folgen** dinge sind hier zu finden :
+**Folgen** dinge sind hier zu finden :
 - Code 
 - Spass
 - Bilder 
