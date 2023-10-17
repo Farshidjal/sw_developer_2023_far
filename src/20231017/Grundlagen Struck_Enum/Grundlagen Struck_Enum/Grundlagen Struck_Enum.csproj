@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{52BC88CD-902B-4DAD-A5D3-53870D86C265}</ProjectGuid>
+    <ProjectGuid>{9E413098-6AE1-4040-9CDE-56E3971D3BC7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Teilnehmerverwaltung_V2</RootNamespace>
-    <AssemblyName>Teilnehmerverwaltung V2</AssemblyName>
+    <RootNamespace>Grundlagen_Struck_Enum</RootNamespace>
+    <AssemblyName>Grundlagen Struck_Enum</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Teilnehmer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

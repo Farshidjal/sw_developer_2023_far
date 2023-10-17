@@ -27,34 +27,41 @@ namespace Teilnehmerverwaltung_V2
          * */
         static void Main(string[] args)
         {
-            string name = string.Empty;
-            string vorname = string.Empty;
-            string ort = string.Empty;
-            DateTime geburtsdatum = DateTime.MinValue;
+            Teilnehmer teilnehmer = new Teilnehmer();
             string headerText = "Teilnehmer Verwaltung v2.0 02023 WIFI_Soft";
-            int plz = 0;
-
-            CreatHeader(headerText, ConsoleColor.Yellow);
-
-            Console.WriteLine("Bitte geben Sie die Teilnehemr Daten ein :");
-
-            vorname = ReadString("\tVorname: ");
-
-            name = ReadString("\tNachname:");
 
 
-            geburtsdatum = ReadDateTime("\tGeburtsdatun");
+            CreatHeader(headerText, ConsoleColor.Yellow, true);
 
-            plz = ReadInt("\tPLZ");
-            ort = ReadString("\tWohnort:");
+            Console.WriteLine("Bitte geben Sie die Teilnehemr Daten ein : ");
 
-            DispalyStudentInfo(vorname, name, geburtsdatum, plz, ort);
+            teilnehmer = GetStudentsInfo();
+
+            DispalyStudentInfo(teilnehmer);
+
+            SaveStudentInfo(teilnehmer,"meineTeilnehemr.json")
 
         }
 
-        private static void DispalyStudentInfo(string vorname, string name, DateTime geburtsdatum, int plz, string ort)
+        
+
+        private static Teilnehmer GetStudentsInfo()
         {
-            Console.WriteLine("";
+            Teilnehmer teilnehmer;
+
+            teilnehmer.Name = ReadString("\tVorname: ");
+            teilnehmer.Nachname = ReadString("\tNachname:");
+            teilnehmer.Geburtsdatumn = ReadDateTime("\tGeburtsdatun");
+            teilnehmer.Plz = ReadInt("\tPLZ");
+            teilnehmer.Ort = ReadString("\tWohnort:");
+
+            return teilnehmer;
+        }
+
+        private static void DispalyStudentInfo(Teilnehmer studentInfo)
+            )
+        {
+            Console.WriteLine("\nDie";
         }
 
         private static int ReadInt(string inputPromt)
@@ -129,13 +136,13 @@ namespace Teilnehmerverwaltung_V2
             return inputDateTime;
         }
 
-        private static void CreatHeader(string headerText, ConsoleColor headerTextColor bool clearScreen)
+        private static void CreatHeader(string headerText, ConsoleColor, headerTextColor, bool, clearScreen)
         {
             int xTitelPos = 0;
             
             if(clearScreen)
             {
-                Console.
+                Console.Clear();
             }
 
 
